@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "bdd": "cucumber-js -p default",
+    "c8:bdd": "c8 pnpm bdd"
   },
   "keywords": [],
   "author": "",
@@ -15,12 +19,19 @@
     "@nestjs/common": "^11.1.5",
     "@nestjs/core": "^11.1.5",
     "@nestjs/platform-express": "^11.1.5",
+    "@vitest/coverage-v8": "^3.2.4",
+    "c8": "^10.1.3",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "@cucumber/pretty-formatter": "^2.0.1",
     "@types/node": "^24.1.0",
+    "@vitest/ui": "^3.2.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
