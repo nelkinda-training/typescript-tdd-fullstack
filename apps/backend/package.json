@@ -8,7 +8,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "bdd": "cucumber-js -p default",
-    "c8:bdd": "c8 pnpm bdd"
+    "c8:bdd": "c8 pnpm bdd",
+    "stryker": "stryker run"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,10 @@
   "devDependencies": {
     "@cucumber/cucumber": "^12.1.0",
     "@cucumber/pretty-formatter": "^2.0.1",
+    "@stryker-mutator/core": "^9.0.1",
+    "@stryker-mutator/cucumber-runner": "^9.0.1",
+    "@stryker-mutator/typescript-checker": "^9.0.1",
+    "@stryker-mutator/vitest-runner": "^9.0.1",
     "@types/node": "^24.1.0",
     "@vitest/ui": "^3.2.4",
     "ts-node": "^10.9.2",
