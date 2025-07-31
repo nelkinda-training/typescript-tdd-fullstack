@@ -2,7 +2,6 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -13,7 +12,8 @@
     "test:coverage": "vitest run --coverage",
     "cy:open": "start-server-and-test dev http-get://localhost:5173 cypress open",
     "cypress:run": "cypress run",
-    "cy:run":  "start-server-and-test dev http-get://localhost:5173 cypress:run"
+    "cy:run":  "start-server-and-test dev http-get://localhost:5173 cypress:run",
+    "bdd": "cucumber-js -p default"
   },
   "postinstall": "pnpm exec cypress install",
   "dependencies": {
